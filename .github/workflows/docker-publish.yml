@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@2.18
+        uses: elgohr/Publish-Docker-Github-Action@v5
         env:
           CARTOGRAM_VERSION: ${{ github.sha }}
         with:
